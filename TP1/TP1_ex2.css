@@ -1,0 +1,139 @@
+table{
+    border-collapse: separate;
+}
+
+caption{
+    caption-side: bottom;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid blue;
+    text-align: center;
+    height: 2.4em;
+}
+
+tbody th:first-child{
+    vertical-align: text-top;
+}
+
+td{
+    text-align: center;
+    width: 10em;
+}
+
+td:empty{
+    border-top: none;
+    border-left: 1px dashed;
+    border-right: 1px dashed;
+    border-bottom: 1px dashed;
+}
+
+th:empty{
+    border: none;
+}
+
+tbody tr:first-child td{
+    border-top: 1px dashed;
+    border-left: none;
+    border-right: 1px dashed;
+    border-bottom: 1px dashed;
+}
+
+/*Ne marche pas*/
+tbody tr:first-child td:first-child{
+    border: 1px dashed;
+}
+
+th:not(:empty){
+    border-radius: 0.5em;
+    background-color: rgb(79, 129, 189);
+    color: white;
+    border: 2px outset rgb(59, 97, 142);
+    box-shadow: 1px 1px 0px black;
+}
+
+.BAC8 td:last-child:not(:empty){
+    border-radius : 0.5em;
+    border : 2px outset rgb(94, 73, 121);
+    background-color: rgb(128, 100, 162);
+    box-shadow: 1px 1px 0px black;
+    color: white;
+}
+
+
+.BAC5 td+td{
+    border-radius : 0.5em;
+    border : 2px outset rgb(147, 178, 84);
+    background-color: rgb(155, 187, 89);
+    box-shadow: 1px 1px 0px black;
+    color: white;
+}
+
+.BAC3 td:not(:empty){
+    border-radius : 0.5em;
+    border : 2px outset rgb(59, 97, 142);
+    background-color: rgb(59, 129, 189);
+    box-shadow: 1px 1px 0px black;
+    color: white;
+}
+
+tbody tr:first-child+tr+tr+tr+tr+tr+tr+tr td:first-child+td{
+    opacity: 0.5;
+}
+
+
+a{
+    display : block;
+    color : white;
+    text-decoration : none;
+}
+
+#miage {
+    box-shadow: 10px 0px 0px rgb(66, 131, 185);
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#MIAGE2 {
+    border-left: rgb(66, 131, 185);
+    border-top-left-radius: 0;
+}
+
+img {
+    position: absolute;
+    height: 4%;
+    width: 4%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: etoile;
+    -webkit-animation-duration: 5s;
+}
+
+@keyframes etoile {
+
+    from {
+
+        top:430px;
+        left:385px;
+    }
+
+    25% {
+        top:400px;
+        left:385px;
+    }
+
+    50% {
+        top:400px;
+        left:210px;
+    }
+
+    75% {
+        top:430px;
+        left:210px;
+    }
+
+    to {
+        top:430px;
+        left:385px;
+    }
+}
