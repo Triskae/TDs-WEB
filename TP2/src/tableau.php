@@ -7,6 +7,11 @@
  */
 
 
+require_once 'entete.inc';
+entete("Tableau");
+
+
+
 $tab = array(
     array("date.php", "23-09-2016", "1856"),
     array("tableau.php", "223-09-2016", "1875")

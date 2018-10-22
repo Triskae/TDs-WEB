@@ -1,0 +1,19 @@
+div.lien {
+    border: blue thin solid;
+    float: left;
+    margin-right: 2em;
+}
+
+#barrenavigation {
+    display: inline-block;
+    width: 100%;
+}
+
+mark {
+    background-color: yellow;
+    color: black;
+}
+
+.droite {
+    float: right;
+}

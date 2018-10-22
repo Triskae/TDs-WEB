@@ -6,6 +6,8 @@
     <meta charset="utf-8"/>
 
     <?php
+    require_once 'entete.inc';
+    entete('preferences');
     session_start();
     // Insertion de la balise link
     if (isset($_POST['style'])) {

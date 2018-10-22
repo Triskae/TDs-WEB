@@ -1,4 +1,8 @@
 <?php
+require_once 'entete.inc';
+entete("Tableau");
+
+
 $date = strtotime("01 october 2012");
 
 if (isset($_GET["date"]))
